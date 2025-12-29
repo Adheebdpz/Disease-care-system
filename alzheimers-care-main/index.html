@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Alzheimer’s Care System</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background"></div>
+    <div class="login-container">
+        <h2>Welcome to <span class="highlight">Alzheimer’s Care System</span></h2>
+        <p>Select Your Role to Continue</p>
+
+        <!-- Role Selection -->
+        <div class="role-selection">
+            <div class="role-card" id="patient-card">
+                <img src="patient.png" alt="Patient">
+                <p>Patient</p>
+            </div>
+            <div class="role-card" id="caretaker-card">
+                <img src="caretaker.png" alt="Caretaker">
+                <p>Caretaker</p>
+            </div>
+            <div class="role-card" id="doctor-card">
+                <img src="doctor.png" alt="Doctor">
+                <p>Doctor</p>
+            </div>
+        </div>
+
+        <!-- Innovative Login Form (Hidden by Default) -->
+        <div id="login-form" class="hidden login-popup">
+            <h3 id="login-title">Login</h3>
+            <div class="input-group">
+                <span class="icon">📧</span>
+                <input type="email" id="email" placeholder="Enter Email">
+            </div>
+            <div class="input-group">
+                <span class="icon">🔒</span>
+                <input type="password" id="password" placeholder="Enter Password">
+            </div>
+            <button class="login-btn" onclick="loginUser()">Login</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
